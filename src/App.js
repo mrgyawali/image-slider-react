@@ -72,7 +72,7 @@ class App extends React.Component {
             <div
               className={`hero-background`}
               style={{
-                backgroundImage: `url(${images[0]})`,
+                backgroundImage: `url(${images[0].src})`,
                 backgroundSize: "cover"
               }}
             />
