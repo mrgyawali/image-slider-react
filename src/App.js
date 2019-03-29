@@ -76,7 +76,7 @@ class App extends React.Component {
           </Variant>
           <Variant id="1">
             <div className="hero-content">
-              <h1 color="red">WORLDS FIRST SNEAKER MADE FROM COFFEE</h1>
+              <h1>WATERPROOF SNEAKERS MADE FROM COFFEE</h1>
             </div>
           </Variant>
         </Experiment>
