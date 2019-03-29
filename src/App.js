@@ -49,29 +49,30 @@ class App extends React.Component {
     const { activeIndex } = this.state;
     return (
       <div className="hero-wrapper pt-5">
-        <ul className="slick-dots">
-          {images.map((image, i) => (
-            <li
-              key={i}
-              onClick={() => this.changeCurrentImage(i)}
-              className={activeIndex === i ? "active" : ""}
-            />
-          ))}
-        </ul>
-        {images.map((image, index) => (
-          <div
-            className={`hero-background ${
-              activeIndex === index ? "" : "hidden"
-            }`}
-            key={index}
-            style={{
-              backgroundImage: `url(${image.src})`,
-              backgroundSize: "cover"
-            }}
-          />
-        ))}
         <Experiment id="wx1VYmrRRr-NAHQLF7JoUA">
           <Variant id="0">
+            <ul className="slick-dots">
+              {images.map((image, i) => (
+                <li
+                  key={i}
+                  onClick={() => this.changeCurrentImage(i)}
+                  className={activeIndex === i ? "active" : ""}
+                />
+              ))}
+            </ul>
+            {images.map((image, index) => (
+              <div
+                className={`hero-background ${
+                  activeIndex === index ? "" : "hidden"
+                }`}
+                key={index}
+                style={{
+                  backgroundImage: `url(${image.src})`,
+                  backgroundSize: "cover"
+                }}
+              />
+            ))}
+
             <div className="hero-content">
               <h1>WORLDS FIRST SNEAKER MADE FROM COFFEE</h1>
             </div>
