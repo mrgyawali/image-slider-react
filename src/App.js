@@ -3,6 +3,8 @@ import { Experiment, Variant } from "react-optimize";
 
 import "./App.scss";
 
+import VariantRandom from "./data";
+
 import img1 from "./assets/pic1.png";
 import img2 from "./assets/pic2.png";
 import img3 from "./assets/pic3.png";
@@ -75,18 +77,7 @@ class App extends React.Component {
             </div>
           </Variant>
           <Variant id="1">
-            <div className="hero-content">
-              <h1>Hello There</h1>
-            </div>
-          </Variant>
-          <Variant id="2">
-            <div
-              className="hero-background"
-              style={{
-                backgroundImage: `url(${images[0].src})`,
-                backgroundSize: "cover"
-              }}
-            />
+            <VariantRandom />
           </Variant>
         </Experiment>
       </div>

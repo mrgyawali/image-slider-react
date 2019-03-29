@@ -12,7 +12,7 @@
 		"react-ga": "^2.5.7",
 		"react-optimize": "^1.0.3",
 		"react-scripts": "2.1.5",
-		"react-transition-group": "^2.6.0",
+		"react-transition-group": "1.x",
 		"yarn": "^1.13.0"
 	},
 	"scripts": {
