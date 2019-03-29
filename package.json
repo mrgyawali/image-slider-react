@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@marvelapp/react-ab-test": "^2.2.0",
 		"add": "^2.0.6",
 		"node-sass": "^4.11.0",
 		"react": "^16.8.3",

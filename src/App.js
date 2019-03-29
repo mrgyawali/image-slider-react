@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Experiment, Variant } from "react-optimize";
 
 import "./App.scss";
 
@@ -67,10 +68,18 @@ class App extends React.Component {
             }}
           />
         ))}
-
-        <div className="hero-content">
-          <h1>WORLDS FIRST SNEAKER MADE FROM COFFEE</h1>
-        </div>
+        <Experiment id="AD11DrZcRBykrML9DogxTg">
+          <Variant id="0">
+            <div className="hero-content">
+              <h1>WORLDS FIRST SNEAKER MADE FROM COFFEE</h1>
+            </div>
+          </Variant>
+          <Variant id="1">
+            <div className="hero-content">
+              <h1 color="red">WORLDS FIRST SNEAKER MADE FROM COFFEE</h1>
+            </div>
+          </Variant>
+        </Experiment>
       </div>
     );
   }
