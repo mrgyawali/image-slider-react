@@ -1,6 +1,5 @@
 import * as React from "react";
-import Experiment from "./components/Experiment";
-import Variant from "./components/Variant";
+import { Experiment, Variant } from "react-optimize";
 
 import "./App.scss";
 

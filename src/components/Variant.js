@@ -6,7 +6,10 @@ const OptimizeContext = createReactContext();
 
 class Variant extends React.Component {
   render() {
-    console.log("this.props", this.props.children.props.children.props);
+    console.log(
+      "this.props",
+      this.props.children.props.children.props.children
+    );
     console.log("id", this.props.id);
     return (
       <OptimizeContext.Consumer>

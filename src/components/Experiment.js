@@ -60,6 +60,8 @@ class Experiment extends React.Component {
 
   render() {
     console.log("variant", this.state.variant);
+    console.log("propsssssssssss exp", this.props);
+
     return (
       <OptimizeContext.Provider value={this.state.variant}>
         {this.state.variant === null ? this.props.loader : this.props.children}
