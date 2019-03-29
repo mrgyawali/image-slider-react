@@ -82,7 +82,6 @@ class App extends React.Component {
           <Variant id="2">
             <div
               className="hero-background"
-              key={index}
               style={{
                 backgroundImage: `url(${images[0].src})`,
                 backgroundSize: "cover"
