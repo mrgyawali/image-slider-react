@@ -5,6 +5,7 @@
 	"dependencies": {
 		"@marvelapp/react-ab-test": "^2.2.0",
 		"add": "^2.0.6",
+		"create-react-context": "^0.2.3",
 		"node-sass": "^4.11.0",
 		"react": "^16.8.3",
 		"react-dom": "^16.8.3",
