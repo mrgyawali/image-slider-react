@@ -79,7 +79,7 @@ class App extends React.Component {
           </Variant>
           <Variant name="B">
             <div className="hero-content">
-              <h1>WATERPROOF SNEAKERS MADE FROM COFFEE</h1>
+              <h1>Hello Wrld</h1>
             </div>
           </Variant>
         </Experiment>
