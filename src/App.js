@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Experiment, Variant } from "react-optimize";
+import { Experiment, Variant, emitter } from "@marvelapp/react-ab-test";
 
 import "./App.scss";
 
@@ -45,12 +45,14 @@ class App extends React.Component {
 
   render() {
     const { activeIndex } = this.state;
+    emitter.defineVariants("My Example", ["A", "B"], [50, 50]);
+
     return (
       <div className="hero-wrapper pt-5">
         <ul className="slick-dots">
           {images.map((image, i) => (
             <li
-              key={image.id}
+              key={i}
               onClick={() => this.changeCurrentImage(i)}
               className={activeIndex === i ? "active" : ""}
             />
@@ -68,13 +70,14 @@ class App extends React.Component {
             }}
           />
         ))}
-        <Experiment id="<AD11DrZcRBykrML9DogxTg>">
-          <Variant id="0">
+
+        <Experiment ref="experiment" name="My Example">
+          <Variant name="A">
             <div className="hero-content">
               <h1>WORLDS FIRST SNEAKER MADE FROM COFFEE</h1>
             </div>
           </Variant>
-          <Variant id="1">
+          <Variant name="B">
             <div className="hero-content">
               <h1>WATERPROOF SNEAKERS MADE FROM COFFEE</h1>
             </div>
