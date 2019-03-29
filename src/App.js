@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Experiment, Variant, emitter } from "@marvelapp/react-ab-test";
-
+import ReactGA from "react-ga";
 import "./App.scss";
 
 import img1 from "./assets/pic1.png";
@@ -8,6 +8,10 @@ import img2 from "./assets/pic2.png";
 import img3 from "./assets/pic3.png";
 
 const images = [{ src: img1 }, { src: img2 }, { src: img3 }];
+
+ReactGA.initialize("UA-137225106-1", { debug: true });
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 class App extends React.Component {
   constructor(props) {
     super(props);
